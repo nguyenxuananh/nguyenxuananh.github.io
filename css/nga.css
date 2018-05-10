@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+
+}
+body {
+	max-width: 1000px;
+	margin: auto;
+	background-color: grey;
+}
+@keyframes title {
+	0%  {background-color: #EF7126; color: #F9E559;}
+	25%  {background-color: #6F3662; color: #FFFFFF;}
+	50%  {background-color: #9F6164; color: #F8DEBD;}
+	75%  {background-color: #44B3C2; color: #FFFFFF;}
+	100% {background-color: #218C8D; color: #F9E559;}
+}
+h1 {
+	text-align: center;
+	font-size: 3em;
+	text-transform: uppercase;
+	background-color: bisque;
+	padding: 10px;
+	animation: title 5s ease infinite;	
+}
+.anh {
+	float: left;
+	margin: 16px;
+}
+.anh img {
+	border: 2px solid black;
+	padding: 2px;
+}
+@keyframes example {
+	0% {margin: 0px; opacity: 1;}
+	25% {margin: 100px; opacity: 0.8;}
+	50% {margin: 150px; opacity: 0.5;}
+	75% {margin: 200px; opacity: 0.3;}
+	100%{margin: 250px; opacity: 0.1;}
+}
+h2 {
+	font-size: 1.5em;
+	animation: example 7s linear infinite;
+	height: 30px;
+}

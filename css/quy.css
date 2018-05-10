@@ -1,0 +1,13 @@
+#myDIV {
+    background-color:lightblue;
+    transform:translate(50px,50px);
+    width: 300px;
+    height: 200px;
+    boder: 3px solid orange;
+}
+div {
+	boder: 3px solid orange;
+}
+body {
+	height: 500px;
+	}
