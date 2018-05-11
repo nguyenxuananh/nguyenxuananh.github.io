@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #df75f1;
+	max-width: 1000px;
+	margin: auto;
+	padding: 20px;
+}
+#thiep {
+	background-color: red;
+	width: 1000px;
+	height: 500px;
+	transform: rotate(-5deg);
+}
+@keyframes thuynga {
+	0% {background-color: red; color: blue; opacity: 1}
+	25% {background-color: #52215a; color: #c19837; opacity: 0.8}
+	50% {background-color: red; color: blue; opacity: 0.5}
+	75% {background-color: #f9e009; color: #b9340b; opacity: 0.3}
+	100% {background-color: #0b0f6d; color: #d40b4f; opacity: 0.1}
+}
+h1 {
+	text-align: center;
+	font-size: 3em;
+	background-color: #FF9800;
+	width: 1000px;
+	animation: thuynga 5s ease infinite;
+}
+img {
+	border: groove 3px black;
+}
+#thiep p {
+	position: absolute;
+	text-align: center;
+	font-size: 3em;
+	text-transform: capitalize;
+	}#thiep img:hover {
+		opacity: 0.5;
+	}
+	#thiep img {
+		opacity: 1;
+		transition: opacity 1s linear;
+	}
+@keyframes anh {
+	0%  {margin-left: 0px;opacity: 1;}
+	25% {margin-left: 100px;opacity: 0.8;}
+	50% {margin-left: 150px;opacity: 0.5;}
+	75% {margin-left: 200px;opacity: 0.3;}
+	100% {margin-left: 250px;opacity: 0.1;}
+}
+h2 {
+	font-size: 1.5em;
+	animation: anh 7s linear infinite;
+	height: 30px;
+}
