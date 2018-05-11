@@ -31,11 +31,11 @@ h1 {
 	padding: 2px;
 }
 @keyframes example {
-	0% {margin: 0px; opacity: 1;}
-	25% {margin: 100px; opacity: 0.8;}
-	50% {margin: 150px; opacity: 0.5;}
-	75% {margin: 200px; opacity: 0.3;}
-	100%{margin: 250px; opacity: 0.1;}
+	0% {margin-left: : 0px; opacity: 1;}
+	25% {margin-left: 100px; opacity: 0.8;}
+	50% {margin-left: 150px; opacity: 0.5;}
+	75% {margin-left: 200px; opacity: 0.3;}
+	100%{margin-left: 250px; opacity: 0.1;}
 }
 h2 {
 	font-size: 1.5em;

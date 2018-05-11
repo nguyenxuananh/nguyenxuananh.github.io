@@ -35,13 +35,14 @@ img {
 	text-align: center;
 	font-size: 3em;
 	text-transform: capitalize;
-	}#thiep img:hover {
-		opacity: 0.5;
-	}
-	#thiep img {
-		opacity: 1;
-		transition: opacity 1s linear;
-	}
+}
+#thiep img:hover {
+	opacity: 0.5;
+}
+#thiep img {
+	opacity: 1;
+	transition: opacity 1s linear;
+}
 @keyframes anh {
 	0%  {margin-left: 0px;opacity: 1;}
 	25% {margin-left: 100px;opacity: 0.8;}
