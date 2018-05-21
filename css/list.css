@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	font-size: 2em;	
+}
+#main-menu > li {
+	float: left;
+	padding: 20px;
+}
+#main-menu {
+	list-style-type: none;
+}
+body {
+	margin: auto;
+}
+.anh {
+	list-style-type: none;
+	display: none;
+}
+.em:hover .anh{
+	display: block;
+}

@@ -1,13 +1,92 @@
-#myDIV {
-    background-color:lightblue;
-    transform:translate(50px,50px);
-    width: 300px;
-    height: 200px;
-    boder: 3px solid orange;
+* {
+	box-sizing: border-box;
 }
-div {
-	boder: 3px solid orange;
+img {
+	max-width: 100%;
 }
+h2 {
+	padding: 10px;
+}
+h3 {
+	text-align: center;
+}
+
 body {
-	height: 500px;
-	}
+	max-width: 1400px;
+	margin: auto;
+}
+#tieude {
+	text-decoration: none;
+}
+#main-menu > li {
+	float: left;
+	padding: 30px;
+}
+#main-menu {
+	position: absolute;
+	list-style-type: none;
+	top: 30px;
+	right: 20px;
+	font-size: 1em;
+	margin: 5px;
+}
+.anh {
+	list-style-type: none;
+	display: none;
+	background-color: white;
+}
+.thucdon:hover .anh{
+	display: block;
+}
+#main-menu a {
+	text-decoration: none;
+	color: red;
+	text-transform: uppercase;
+}
+.anh {
+	position: absolute;
+	padding: 10px;
+}
+.tintuc:hover .anh{
+	display: block;
+}
+#gioithieu {
+	float: left;
+	max-width: 600px;
+	padding: 10px;
+	background-color: #f7eded;
+}
+#dish {
+	padding: 10px;
+	float: left;
+}
+.mon {
+	float: left;
+	border: 2px solid black;
+	margin-left: 60px;
+	margin-right: 59px;
+	overflow: hidden;
+}
+#dish p {
+	text-align: center;
+	text-transform: capitalize;
+	color: red
+}
+.mon img {
+	float: left;
+	opacity: 1;
+	transition: opacity 1s linear;
+	transition: all 0.5s linear;
+}
+.mon a {
+	text-decoration: none;
+}
+.mon:hover img {
+	transform: scale(1.2);
+}
+.box {
+	width: 320px;
+	height: 320px;
+	overflow: hidden;
+	border-bottom: 2px solid black;
+}
