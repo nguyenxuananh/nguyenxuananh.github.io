@@ -1,0 +1,159 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: auto;
+}
+img {
+	width: 100%;
+	display: block;
+}
+#container span {
+	color: #4bcaff;
+}
+#container a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+#main-menu {
+	position: absolute;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	padding: 30px;
+}
+.content1 {
+	max-width: 1000px;
+	margin: auto;
+	position: relative;
+}
+.menu-left {
+	font-size: 2em;
+	text-transform: uppercase;
+	width: 30%;
+	float: left;
+}
+.menu-right {
+	width: 70%;
+	float: left;
+}
+#menu {
+	list-style-type: none;
+}
+#menu > li {
+	float: left;
+	width: 20%;
+	text-align: right;
+}
+.item {
+	border: 2px solid #4bcaff;
+	padding: 5px;
+}
+#sologan {
+	position: absolute;
+	color: white;
+	font-size: 2em;
+	top: 230px;
+	left: 95px;
+}
+.sologan_1 {
+	background-color: black;
+	max-width: 585px;
+	margin: auto;
+}
+.sologan_2 {
+	background-color: black;
+}
+#container2 {
+	clear: both;
+	background-color: #4bcaff;
+	height: 500px;
+	color: white;
+}
+h3 {
+	text-transform: uppercase;
+}
+.content2 {
+	max-width: 1000px;
+	margin: auto;
+}
+.content2_item {
+	padding-top: 50px;
+}
+.content2_item a {
+	font-size: 2em;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
+.content2_item span {
+	border-bottom: 1px solid;
+}
+.content2_box {
+	width: 25%;
+	float: left;
+}
+.content2_box p {
+	padding-right: 20px;
+	text-align: justify;
+}
+#container3 {
+	margin: 50px;
+}
+.content3 {
+	max-width: 1000px;
+	margin: auto;
+}
+.content3-menu_left {
+	font-size: 2em;
+	text-transform: uppercase;
+	width: 30%;
+	float: left;
+}
+.content3-menu_left a {
+	text-decoration: none;
+	color: black;
+}
+.content3-menu_left span {
+	border-bottom: 1px solid;
+}
+.content3-menu_right {
+	float: left;
+	width: 70%;
+}
+.content3-menu_right a {
+	text-transform: uppercase;
+	color: black;
+	text-decoration: none;
+}
+#gallery {
+	max-width: 1000px;
+	margin: auto;
+}
+.picture {
+	width: 25%;
+	float: left;
+	position: relative;
+}
+.content3::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.hover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    display: none;
+    height: 100%;
+}
+.hover_plus {
+	position: absolute;
+}
+.picture:hover .hover {
+	display: block;
+}
