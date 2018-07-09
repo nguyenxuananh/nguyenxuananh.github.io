@@ -235,6 +235,9 @@ img {
 	text-align: center;
 	padding-top: 100px;
 }
+.ending a {
+	color: black;
+}
 .fa-skype {
 	border-right: 1px solid black;
 	margin: 5px;
