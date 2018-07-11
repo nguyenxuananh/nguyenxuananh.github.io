@@ -4,7 +4,6 @@
 	<title>Calculator</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/testjs.css">
-	<script src="js/script.js"></script>
 </head>
 <body>
 	<h1>Calculator</h1>
@@ -13,7 +12,7 @@
 		<button class="num" onclick="reset()">AC</button>
 		<button id="clear" class="clear" onclick="dellete()">C</button>
 		<button class="num" onclick="pi()">Pi</button>
-		<button>%</button>
+		<button class="num" onclick="percent()">%</button>
 		<button class="num" value="7" onclick="myFunction(this.value)">7</button>
 		<button  class="num" value="8" onclick="myFunction(this.value)">8</button>
 		<button class="num" data-num="9" value="9" onclick="myFunction(this.value)">9</button>
@@ -34,5 +33,6 @@
 		<button data-ops="divided by" class="ops" onclick="chia()">/</button>
 
 	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>

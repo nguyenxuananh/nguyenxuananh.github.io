@@ -36,3 +36,7 @@ function pi() {
 function reset() {
 	document.getElementById("ketqua").value = '';
 }
+function percent() {
+	var x = eval(document.getElementById("ketqua").value);
+	document.getElementById("ketqua").value = (x / 100);
+}
