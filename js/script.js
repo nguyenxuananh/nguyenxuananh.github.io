@@ -40,3 +40,5 @@ function percent() {
 	var x = eval(document.getElementById("ketqua").value);
 	document.getElementById("ketqua").value = (x / 100);
 }
+
+

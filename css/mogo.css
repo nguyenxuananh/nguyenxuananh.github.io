@@ -128,13 +128,14 @@ button {
 }
 .container1 {
 	width: 100%;
-	height: 700px;
+	clear: both;
 }
 .content1 {
 	width: 80%;
 	margin: auto;
 	text-align: center;
 	padding-top: 50px;
+	clear: both;
 }
 .content1 h1 {
 	text-transform: uppercase;
@@ -168,11 +169,13 @@ button {
 }
 .image img {
 	width: 100%;
+	display: block;
 }
 .image {
 	float: left;
 	width: 30%;
 	transition: transform 0.5s linear;
+	margin-bottom: 100px;
 }
 .hover {
 	position: absolute;
@@ -191,6 +194,7 @@ button {
 	width: 100%;
 	height: 200px;
 	background-color: #27b6f7;
+	clear: both;
 }
 .content2 {
 	width: 80%;
