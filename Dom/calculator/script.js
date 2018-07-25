@@ -5,7 +5,8 @@ function tinhtoan() {
 	try{
 		var ketqua = eval(document.getElementById("ketqua").value);
 		document.getElementById("ketqua").value = ketqua;
-	}catch(e){
+	}
+	catch(e){
 		document.getElementById("ketqua").value = 'Thằng ngu';
 	}
 }
@@ -25,8 +26,8 @@ function chia() {
 	document.getElementById("ketqua").value += "/"
 }
 function dellete() {
-	var ketqua = document.getElementById("ketqua").value
-	var newketqua = ketqua.slice(0, -1)
+	var ketqua = document.getElementById("ketqua").value;
+	var newketqua = ketqua.slice(0, -1);
 	document.getElementById("ketqua").value = newketqua;
 }
 function pi() {

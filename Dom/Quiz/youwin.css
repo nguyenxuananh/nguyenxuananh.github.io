@@ -1,0 +1,10 @@
+body {
+	background-color: black;
+}
+img {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 50%;
+	max-width: 100%;
+}
