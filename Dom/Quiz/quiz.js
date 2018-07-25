@@ -80,7 +80,7 @@ for(var btnAnswer = document.getElementsByClassName("answer") , i = 0 ; i < btnA
 		document.getElementById("content").style.display = "block",
 		document.getElementById("footer").style.display = "block",
 		document.getElementById("lose").style.display = "none",
-		document.getElementById("again").style.display = "none";
+		document.getElementById("again").style.display = "none",
 		document.getElementById("result").style.display = "none";
 		x = 1;
 		score = 0;
