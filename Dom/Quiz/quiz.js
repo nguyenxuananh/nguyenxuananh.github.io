@@ -92,13 +92,13 @@ for(var btnAnswer = document.getElementsByClassName("answer") , i = 0 ; i < btnA
 		document.getElementById("footer").innerHTML = "<i><b>Câu hỏi: "+ x + '/' + y +"</b></i>";
 	};
 	// Mảng theme
-var theme = ['url(theme.jpg)' , 'url(theme1.jpg)', 'url(theme2.jpg)'];
-let count = 1;
-const btnChangeTheme = document.getElementById("theme");
- btnChangeTheme.addEventListener("click" , function (){
+	var theme = ['url(theme.jpg)' , 'url(theme1.jpg)', 'url(theme2.jpg)'];
+	let count = 1;
+	const btnChangeTheme = document.getElementById("theme");
+	btnChangeTheme.addEventListener("click" , function (){
 		$('body').css('background-image', theme[count])
 		count++;
 		if(count==3){
 			count=0;
 		}
-});
+	});
