@@ -69,7 +69,6 @@ for(var btnAnswer = document.getElementsByClassName("answer") , i = 0 ; i < btnA
 		document.getElementById("lose").style.display = "block",
 		document.getElementById("lose").innerHTML = "<h1>Rất tiếc bạn đã thất bại !</h1>",
 		document.getElementById("again").style.display = "block",
-		// for(var z = 0; z < score; z++)
 		document.getElementById("again").innerHTML = "<button onclick = 'Again()'>Play's Again!</button>";
 		document.getElementById("result").innerHTML = "<h3>Trả lời đúng: " + score + '/' + y + "</h3>";
 		document.getElementById("result").style.display = "block";
@@ -92,3 +91,14 @@ for(var btnAnswer = document.getElementsByClassName("answer") , i = 0 ; i < btnA
 		a4.innerText = arr[0].answer4;
 		document.getElementById("footer").innerHTML = "<i><b>Câu hỏi: "+ x + '/' + y +"</b></i>";
 	};
+	// Mảng theme
+var theme = ['url(theme.jpg)' , 'url(theme1.jpg)', 'url(theme2.jpg)'];
+let count = 1;
+const btnChangeTheme = document.getElementById("theme");
+ btnChangeTheme.addEventListener("click" , function (){
+		$('body').css('background-image', theme[count])
+		count++;
+		if(count==3){
+			count=0;
+		}
+});

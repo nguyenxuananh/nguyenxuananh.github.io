@@ -6,7 +6,7 @@ function tinhtoan() {
 		var ketqua = eval(document.getElementById("ketqua").value);
 		document.getElementById("ketqua").value = ketqua;
 	}
-	catch(e){
+	catch(err){
 		document.getElementById("ketqua").value = 'Thằng ngu';
 	}
 }
