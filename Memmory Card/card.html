@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Memmory Card</title>
+	<link rel="stylesheet" href="card.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="time">
+		<progress  id="time" value="100" max="100">
+	</div>
+	<div id="start_game">
+		<h1>MEMORY CARD</h1>
+		<h3>Chọn chế độ chơi</h3>
+		<button class="start_game normal" onclick="normal()">normal</button>
+		<button class="start_game hard" onclick="hard()">hard</button>
+	</div>
+	<div id="win" class="load win">
+		<h1>Chiến thắng <i class="far fa-kiss-wink-heart"></i></h1>
+		<button class="playgame normal" onclick="loadContent()">Chơi lại</button>
+	</div>
+	<div id="lose" class="load lose">
+		<h1>Hết thời gian <i class="fas fa-sad-cry"></i></h1>
+		<button class="playgame normal" onclick="loadContent()">Chơi lại</button>
+	</div>
+	<div id="wrap" class="wrap">
+
+	</div>
+	<audio id="start_music">
+		<source src="music/start.mp3" type="">
+	</audio>
+	<audio id="true_music">
+		<source src="music/true.mp3" type="">
+	</audio>
+	<audio id="fall_music">
+		<source src="music/fall.mp3" type="">
+	</audio>
+	<audio id="win_music">
+		<source src="music/win.mp3" type="">
+	</audio>
+	<audio id="lose_music">
+		<source src="music/win.mp3" type="">
+	</audio>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="card.js"></script>
+</body>
+</html>

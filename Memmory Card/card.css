@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: url(image/banner.jpg) center;
+	/*	background-size: 100%;*/
+	/*	background-repeat: no-repeat;*/
+}
+
+.wrap {
+	max-width: 1200px;
+	margin: auto;
+}
+progress {
+	width: 80%;
+	padding: 10px;
+
+}
+
+#start_game {
+	width: 50%;
+	text-align: center;
+	position: absolute;
+	z-index: 1000;
+	border: 1px solid white;
+	background-color: white;
+	padding: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 30%;
+/*		display: none;*/
+}
+#start_game button {
+	text-transform: uppercase;
+	color: red;
+	padding: 5px;
+	width: 100px;
+}
+.load {
+	width: 50%;
+	text-align: center;
+	position: absolute;
+	z-index: 900;
+	border: 1px solid white;
+	background-color: white;
+	padding: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 30%;
+	display: none;
+}
+.load button {
+	text-transform: uppercase;
+	color: red;
+	padding: 5px;
+	width: 100px;
+}
+.time {
+	text-align: center;
+	padding: 50px 0 50px 0;
+	/*	display: none;*/
+}
+.card {
+	width: 10%;
+	height: 15%;
+	position: relative;
+	float: left;
+	margin: 25px;
+}
+img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.card_front {
+	height: 100%;
+}
+.card .card_front, .card .card_backside {
+	transition: all 0.5s;
+	backface-visibility: hidden;
+}
+.card_backside {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+}
+.card_backside img {
+	width: 100%;
+	height: 100%;
+}
+.card.flipped .card_backside {
+	transform: rotateY(0deg);
+}
+.card.flipped .card_front {
+	transform: rotateY(180deg);
+}
+.card:hover {
+	box-shadow: 5px 5px 1px 1px red;
+}

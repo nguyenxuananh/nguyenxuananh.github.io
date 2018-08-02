@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<!-- 	<form>
+		<label for="email">Email</label> <br/>
+		<input type="text" id="email" name="email" /><br>
+
+		<label for="password">Mật khẩu</label> <br/>
+		<input type="text" id="password" name="password" /><br/>
+		<input type="checkbox" id="remember" name="remember" /> <label for="remember">Ghi nhớ đăng nhập</label> </br>
+		<input type="submit" value="Đăng nhập" />
+	</form> -->
+	<div id="wrap">
+		<h1>Đăng kí tài khoản</h1>
+		<form action="logIn.html">
+			<div id="content1">
+				<input type="text" id="name" name="name" placeholder="Họ và tên" /><br/>
+				<input type="text" id="address" name="address" placeholder="Địa chỉ" /><br/>
+				<input type="text" id="phone" name="phone" placeholder="Số điện thoại" /><br/>
+				<input type="text" id="email" name="email" placeholder="Email" /><br/>
+				<input type="text" id="nickName" name="nickName" placeholder="Tên đăng nhập" /><br/>
+				<input type="text" id="password" name="password" placeholder="Mật khẩu" /><br/>
+				<input type="text" id="confirm" name="confirm" placeholder="Nhập lại mật khẩu" /><br/>
+			</div>
+			<div class="content2">
+				<h3>Ngày sinh :</h3>
+				<select name="year" id="year">
+					<option value="">Năm</option>
+				</select>
+				<select name="month" id="month">
+					<option value="">Tháng</option>
+				</select>
+				<select name="day" id="day">
+					<option value="">Ngày</option>		
+				</select><br/>
+			</div>
+			<div class="clear"></div>
+			<div class="content3">
+				<h3>Giới tính :</h3>
+				<input type="radio" id="male" name="gender" /> <label for="male">Nam</label>
+				<input type="radio" id="female" name="gender" /> <label for="female">Nữ</label><br/>
+			</div>
+			<input type="submit" value="Đăng kí" id="submit" />
+		</form>
+	</div>	
+	<script type="text/javascript">
+		// var day = document.getElementById('day');
+		var count = 1;
+		var number = 1990;
+		for (i = count; i <= 31 ; i++) {
+			var newDay = document.createElement("option");
+			newDay.value = i;
+			newDay.innerHTML=i;
+			day.appendChild(newDay);
+		};
+		for (i = count; i <=12; i++) {
+			var newMonth = document.createElement("option");
+			newMonth.value = i;
+			newMonth.innerHTML=i;
+			month.appendChild(newMonth);
+		};
+		for (i = number; i <=2018; i++) {
+			var newYear = document.createElement("option");
+			newYear.value = i;
+			newYear.innerHTML=i;
+			year.appendChild(newYear);
+		}
+
+	</script>
+</body>
+</html>
