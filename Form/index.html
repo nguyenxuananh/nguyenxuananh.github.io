@@ -16,16 +16,19 @@
 		<input type="submit" value="Đăng nhập" />
 	</form> -->
 	<div id="wrap">
-		<h1>Đăng kí tài khoản</h1>
-		<form action="logIn.html">
+		
+		<form action="logIn.html" id="check-form">
+			<div>
+				<h1>Đăng kí tài khoản</h1>
+			</div>
 			<div id="content1">
-				<input type="text" id="name" name="name" placeholder="Họ và tên" /><br/>
-				<input type="text" id="address" name="address" placeholder="Địa chỉ" /><br/>
-				<input type="text" id="phone" name="phone" placeholder="Số điện thoại" /><br/>
-				<input type="text" id="email" name="email" placeholder="Email" /><br/>
-				<input type="text" id="nickName" name="nickName" placeholder="Tên đăng nhập" /><br/>
-				<input type="text" id="password" name="password" placeholder="Mật khẩu" /><br/>
-				<input type="text" id="confirm" name="confirm" placeholder="Nhập lại mật khẩu" /><br/>
+				<input type="text" id="name" name="name" placeholder="Họ và tên" /><span class="error"></span><br/>
+				<input type="text" id="address" name="address" placeholder="Địa chỉ" /><span class="error"></span><br/>
+				<input type="text" id="phone" name="phone" placeholder="Số điện thoại" /><span class="error"></span><br/>
+				<input type="text" id="email" name="email" placeholder="Email" /><span class="error"></span><br/>
+				<input type="text" id="nickName" name="nickName" placeholder="Tên đăng nhập" /><span class="error"></span><br/>
+				<input type="password" id="password" name="password" placeholder="Mật khẩu" /><span class="error"></span><br/>
+				<input type="password" id="confirm" name="confirm" placeholder="Nhập lại mật khẩu" /><span class="error"></span><br/>
 			</div>
 			<div class="content2">
 				<h3>Ngày sinh :</h3>
@@ -45,9 +48,11 @@
 				<input type="radio" id="male" name="gender" /> <label for="male">Nam</label>
 				<input type="radio" id="female" name="gender" /> <label for="female">Nữ</label><br/>
 			</div>
+			<div class="clear"></div>
 			<input type="submit" value="Đăng kí" id="submit" />
 		</form>
-	</div>	
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
 	<script type="text/javascript">
 		// var day = document.getElementById('day');
 		var count = 1;
@@ -69,8 +74,60 @@
 			newYear.value = i;
 			newYear.innerHTML=i;
 			year.appendChild(newYear);
-		}
-
+		};
+		
+		$('#check-form').on('submit', function () {
+			var validate = true;
+			// validate Name
+			if ($('#name').val().trim() == '') {
+				$('#name').next('span').text('Tên không được để trống!');
+				validate = false;
+			} else {
+				$('#name').next('span').text('')
+			};
+			// validate Address
+			if ($('#address').val().trim() == '') {
+				$('#address').next('span').text('Địa chỉ không được để trống!');
+				validate = false;
+			} else {
+				$('#address').next('span').text('')
+			};
+			// validate Phone
+			if ($('#phone').val().match(/^[0-9]+$/) == null) {
+				$('#phone').next('span').text('Số điện thoại không phải là kiểu số!');
+				validate = false;
+			} else {
+				$('#phone').next('span').text('')
+			};
+			// validate Email
+			if ($('#email').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
+				$('#email').next('span').text('Địa chỉ email không hợp lệ!');
+				validate = false;
+			} else {
+				$('#email').next('span').text('')
+			};
+			// validate NickName 
+			if ($('#nickName').val().trim() == '') {
+				$('#nickName').next('span').text('Tên đăng nhập không được để trống!');
+				validate = false;
+			} else {
+				$('#name').next('span').text('')
+			};
+			// validate Password
+			if ($('#password').val().match(/^(?=.*\d).{4,8}$/) == null) {
+				$('#password').next('span').text('Mật khẩu phải từ 4 đến 8 chữ số và bao gồm ít nhất một số!');
+				validate = false;
+			} else {
+				$('#password').next('span').text('')
+			};
+			// validate Confirm
+			if ($('#confirm').value == $('password').value) {
+				$('#confirm').next('span').text('Mật khẩu nhập lại không chính xác!')
+			} else {
+				$('#confirm').next('span').text('')
+			};
+			return validate;	
+		});
 	</script>
 </body>
 </html>
