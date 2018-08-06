@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+.wrap {
+	width: 1200px;
+	margin: auto;
+}
+table , th , td {
+	border: 1px solid black;
+}
+td, th {
+	padding: 10px;
+}
+table {
+	border-collapse: collapse;
+}
+.image {
+	width: 20%;
+}
+.image img {
+	width: 100%;
+}

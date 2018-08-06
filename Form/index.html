@@ -111,7 +111,7 @@
 				$('#nickName').next('span').text('Tên đăng nhập không được để trống!');
 				validate = false;
 			} else {
-				$('#name').next('span').text('')
+				$('#nickName').next('span').text('')
 			};
 			// validate Password
 			if ($('#password').val().match(/^(?=.*\d).{4,8}$/) == null) {
@@ -121,8 +121,9 @@
 				$('#password').next('span').text('')
 			};
 			// validate Confirm
-			if ($('#confirm').value == $('password').value) {
-				$('#confirm').next('span').text('Mật khẩu nhập lại không chính xác!')
+			if ($('#confirm').val() != $('#password').val()) {
+				$('#confirm').next('span').text('Mật khẩu nhập lại không chính xác!');
+				validate = false;
 			} else {
 				$('#confirm').next('span').text('')
 			};
