@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+.col-sm img {
+	height: 100%;
+	width: 100%;
+}
+.col-sm {
+	padding: 20px;
+}
+.navbar-nav {
+	margin: auto;
+}
+.navbar-nav li {
+	margin: 0 10px 0 10px;
+}
