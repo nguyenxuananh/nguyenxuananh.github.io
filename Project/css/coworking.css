@@ -9,7 +9,6 @@
 body {
 	position: relative;
 }
-
 .clear {
 	clear: both;
 }
@@ -219,7 +218,7 @@ body {
 	transform: translateY(-5px);
 }
 .service_row_col-sm, .click {
-	transition: transform 0.5s linear;
+	transition: transform 0.3s linear;
 	box-shadow: 0 0 1px 0 rgb(112, 112, 112), 0 10px 20px 0 rgb(145, 145, 145);
 
 }
@@ -243,7 +242,7 @@ body {
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: white;
     background-color: #14c314;
-    border-color: none;
+    border: none;
 }
 .space_row {
 	margin: 1%;
@@ -251,19 +250,28 @@ body {
 .space_col-sm {
 	padding: 0;
 	margin: 1%;
+	box-shadow: 0 0 10px 1px #14c314;
+	transition: transform 0.3s linear;
 }
-
-
+.space_col-sm:hover {
+	transform: translateY(-5px);
+}
 		/*VOTE*/
-.vote_slice {
-	max-width: 1200px;
+.media {
+	max-width: 1000px;
 	margin: auto;
+	padding: 2%;
 }
-.vote_slide {
-	width: 50%;
-	margin: auto;
+.media img {
+	border-radius: 50%;
+	width: 20%;
 }
-
+.media-body {
+	margin: 0 5%;
+}
+.container-fluid {
+	background-image: url(theme.jpg);
+}
 /*back-to-top* và messenger*/
 .back {
 	display: none;
@@ -289,18 +297,16 @@ body {
 	border-radius: 20px 0 0 0;
 }
 .messenger_a a {
-	border: none;
+	border-color: none;
 }
 .messenger_form {
 	display: none;
 }
-.messenger_li:active .messenger_form {
-	display: block;
-}
 .messenger button {
 	width: 100%;
-	color: #14c314;
+	color: black;
 	background-color: white;
+	border-color: none;
 }
 .messenger_li {
 	width: 100%;
@@ -312,7 +318,6 @@ body {
 .messenger_form {
 	padding: 2%;
 }
-
 /*footer*/
 .container_footer {
 	background-color: #14c314;
@@ -346,11 +351,8 @@ body {
     height: 60%;
 }
 .container_footer_col-sm button {
-    color: #14c314;
+    color: black;
     background: white;
     margin: 10px 40%;	
 }
 
-/*#myTabContent {
-	display: none;
-}*/

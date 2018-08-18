@@ -24,6 +24,9 @@ $(document).ready(function($) {
 });
 $(document).ready(function($){
     $(".back").click(function(){
-        $('html, body').animate({scrollTop:0},1000);
+        $('html').animate({scrollTop:0},1000);
     });
 });
+$('.messenger').click(function() {
+  $('.messenger_form').toggle();
+})
