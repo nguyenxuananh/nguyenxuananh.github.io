@@ -1,0 +1,35 @@
+/*banner*/
+.banner {
+	position: relative;
+}
+.banner img {
+	width: 100%;
+}
+/*mini-menu*/
+.mini-menu {
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px 0;
+}
+.mini-menu a {
+	text-decoration: none;
+	color: black;
+}
+.mini-menu a:hover {
+	color: #14c314;
+}
+
+.mini-menu span {
+	color: #14c314;
+}
+.container {
+	padding-bottom: 50px;
+}
+.container h2, h5 {
+	margin-bottom: 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+iframe {
+	width: 100%;
+}
