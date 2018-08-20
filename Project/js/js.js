@@ -43,6 +43,9 @@
  $('.messenger_a').click(function() {
   $('.messenger_form').toggle();
 })
+  $('.messenger_b').click(function() {
+  $('.messenger_form').toggle();
+})
 
  var number = 1;
  for (i = number; i <= 20; i++) {
