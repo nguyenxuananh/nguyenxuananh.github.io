@@ -229,12 +229,12 @@ body {
 .container_footer_col-sm {
 	margin-bottom: 20px;
 }
-.container_footer_col-sm h1, .container_footer_col-sm h5 {
+.container_footer_col-sm h3, .container_footer_col-sm h5 {
 	text-transform: uppercase;
 	text-align: center;
 	color: white;
 }
-.container_footer_col-sm h1 {
+.container_footer_col-sm h3 {
 	margin-bottom: 20px;
 }
 .container_footer_col-sm ul, .container_footer_col-sm li {

@@ -28,9 +28,9 @@
     $('#myTabContent').removeClass('animated bounceInRight');
   }
   if ($(this).scrollTop() > 2110) {
-    $('.container-fluid').addClass('animated zoomIn');
+    $('.media').addClass('animated zoomIn');
   }else {
-    $('.container-fluid').removeClass('animated zoomIn');
+    $('.media').removeClass('animated zoomIn');
   }
 })
 
