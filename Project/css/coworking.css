@@ -12,8 +12,8 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: grey;
-	opacity: 0.3;
+	background: black;
+	opacity: 0.4;
 }
 .sologan {
 	position: absolute;
@@ -28,36 +28,37 @@
 	color: white;
 }
 .sologan button:hover {
-	background-color: #14c314;
+	background-color: #78b43d;
 }
-.col-sm-5 button {
-	margin: 10px 40% 10px 40%;
-	padding: 6px;
-	background: #14c314;
+.col-sm button {
+	padding: 10px;
+	background: #78b43d;
 	color: white;
 }
-.col-sm-5 h2 {
+.introduction button {
+	color: white;
+	background: #78b43d;
+	margin: 20px 35%;
+	width: 30%;
+	text-align: center;
+}
+.col-sm h2 {
 	text-transform: uppercase;
 	text-align: center;
 }
-.col-sm-5 h5 {
+.col-sm h5 {
 	margin: 10px 0;
 }
 /*welcome*/
-.content_welcome {
-	padding-top: 50px;
-}
-.content_welcome h2, h4 {
+.content_welcome h4 {
 	text-align: center;
-}
-.content_welcome h2 {
-	text-transform: uppercase;
 }
 .content_welcome_row {
 	padding-top: 50px;
+	margin: auto;
 }
 .content_welcome_row i {
-	color: #14c314;
+	color: #78b43d;
 	font-size: 2em;
 	width: 25%;
 }
@@ -65,72 +66,82 @@
 	margin: 10px 0;
 }
 /*style chung cho content*/
-.service, .space, .vote, .container_footer {
+.content_welcome, .service, .space, .vote {
 	width: 100%;
 	margin-top: 50px;
 }
-.service h2, .space h2, .vote h2 {
+.service h2, .space h2, .vote h2, .content_welcome h2 {
 	text-align: center;
 	padding: 10px;
 	text-transform: uppercase;
 	line-height: 50px;
 	color: white;
-	background-color: #14c314;
+	background-color: #78b43d;
 }
 .vote h2 {
 	margin: auto;
 }
-/*service*/
-.wrap {
+.content_welcome_wrap, .wrap, .space_slice {
 	max-width: 1200px;
 	margin: auto;
 }
+/*welcome*/
+.content_welcome_wrap {
+	padding-top: 30px;
+}
+/*service*/
+
 .service_row {
 	margin: 0;
 }
 .service_row_col-sm {
-	text-align: center;
 	margin: 1%;
 	padding: 0;
-	border: 2px solid #14c314;
+	border: 1px solid #78b43d;
 }
-.service_row_col-sm_title h3 {
-	background-color: #14c314;
-	padding: 5px;
-	color: white;
-	margin: 0;
-	height: 80px;
+.service_row_col-sm_title h6 {
+	text-transform: uppercase;
+	padding-top: 20px;
+}
+.service_row_col-sm_title {
+	text-align: center;
 }
 .service_row_col-sm_content {
 	padding: 10px;
 }
 .service_row_col-sm_content button {
-	background: #14c314;
+	background: #78b43d;
 	color: white;
 	padding: 5px;
+}
+.service_row_col-sm_content ul {
+	margin-bottom: 40px;
+	list-style-image: url(../image/service/icon.png);
+}
+.service_row_col-sm_content li {
+	line-height: 2;
 }
 .service_row_col-sm a {
 	text-decoration: none;
 }
 .click {
-	background: #14c314;
+	background: #f17920;
 	padding: 10px;
 	color: white;
 	border-radius: 5px;
+	text-align: center;
 }
 .service_row_col-sm:hover , .click:hover {
 	transform: translateY(-5px);
+	box-shadow: 0 0 1px 0 rgb(112, 112, 112), 0 10px 20px 0 rgb(145, 145, 145);
 }
 .service_row_col-sm, .click {
 	transition: transform 0.3s linear;
-	box-shadow: 0 0 1px 0 rgb(112, 112, 112), 0 10px 20px 0 rgb(145, 145, 145);
-
+}
+.service_row_col-sm .dropdown-divider {
+	border-top: 2px solid #78b43d;
 }
 /*space*/
-.space_slice {
-	max-width: 1200px;
-    margin: auto;
-}
 .space_slice_li li {
 	padding: 0;
 	width: 25%;
@@ -142,17 +153,20 @@
 .space_col-sm {
 	padding: 0;
 	margin: 1%;
-	box-shadow: 0 0 10px 1px #14c314;
+	/*	box-shadow: 0 0 10px 1px #78b43d;*/
 	transition: transform 0.3s linear;
 }
 .space_col-sm:hover {
 	transform: translateY(-5px);
 }
-		/*VOTE*/
+/*VOTE*/
 .media {
 	max-width: 1000px;
 	margin: auto;
 	padding: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .media img {
 	border-radius: 50%;
@@ -165,5 +179,5 @@
 .container-fluid {
 	background-image: url(../background2.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 }

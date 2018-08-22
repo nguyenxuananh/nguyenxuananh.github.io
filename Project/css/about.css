@@ -1,20 +1,11 @@
-/*mini-menu*/
-.mini-menu {
-	max-width: 1200px;
-	margin: auto;
-	padding: 20px 0;
-}
-.mini-menu a {
-	text-decoration: none;
-	color: black;
-}
-.mini-menu a:hover {
-	color: #14c314;
-}
-
-.mini-menu span {
-	color: #14c314;
-}
 .container {
 	padding-bottom: 50px;
+}
+.container button {
+	background: #f17920;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 30px;
 }

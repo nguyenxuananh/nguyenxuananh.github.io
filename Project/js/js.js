@@ -34,16 +34,21 @@
   }
 })
 
+ $('.slice_tab').click(function() {
+  $('.img1').addClass('animated fadeInDownBig');
+  $('.img2').addClass('animated fadeInUpBig');
+})
+
  $(document).ready(function($){
   $(".back").click(function(){
-    $('html').animate({scrollTop:0},1000);
+    $('html').animate({scrollTop:0},600);
   });
 });
 
  $('.messenger_a').click(function() {
   $('.messenger_form').toggle();
 })
-  $('.messenger_b').click(function() {
+ $('.messenger_b').click(function() {
   $('.messenger_form').toggle();
 })
 
@@ -54,4 +59,11 @@
   newUser.innerHTML = i;
   user.append(newUser);
 };
+
+$('.button').click(function() {
+  window.location.href = "about.html";
+})
+$('.order').click(function() {
+  window.location.href = "order.html";
+})
 
